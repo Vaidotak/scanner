@@ -1,3 +1,5 @@
+package enumai;
+
 public class EunuchTest {
     public static void main(String[] args){
         Eunuchai matavimoVienetas = Eunuchai.CENTIMETRAS;

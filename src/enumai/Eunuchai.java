@@ -1,3 +1,5 @@
+package enumai;
+
 public enum Eunuchai {
     MILIMETRAS,
     CENTIMETRAS,
