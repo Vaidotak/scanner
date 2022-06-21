@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); //todo Scanner naudojimas
 
         Country valstybe = new Country();
         System.out.println("Įveskite pavadinimą: ");
@@ -24,13 +24,13 @@ public class Main {
         String latviai = latvija.getPavadinimas();
         System.out.println(latviai);
 
-        System.out.println(latviai.substring(0, 4) + "iai");
-        String latviai1 = latviai.substring(0, 4) + "iai";
+        System.out.println(latviai.substring(0, 4).concat("iai")); //todo vietoje + naudoti concat()!
+        String latviai1 = latviai.substring(0, 4).concat("iai");
         System.out.println(latviai1.toUpperCase());
         String latviai2 = latviai1.toUpperCase();
         System.out.println(latviai2.substring(0, 2));
         String latviai3 = latviai2.substring(0, 2);
-        System.out.println(latviai3 + "la");
+        System.out.println(latviai3.concat("la"));
         String latviai4 = latviai3 + latviai3.toLowerCase();
         System.out.println(latviai4.replace("l", "t"));
         String latviai5 = latviai4.replace("l", "t");
